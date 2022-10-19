@@ -26,9 +26,7 @@ This is a minimalistic example what you can find in the [metamask docs](https://
 
 Confused? You can run `git checkout nodejs-edition` if you'd like to see this with nodejs.
 
-## Typescript
 
-For this demo project, we do not have a typescript edition. Please see the NextJS projects for a professional typescript front end.
 
 ### Optional Gitpod
 

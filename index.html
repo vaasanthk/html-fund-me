@@ -1,19 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Funde Me App</menu></title>
+    <title>GoFundMe</title>
+    <h2>Welcome to Crowdfunding app.</h2>
   </head>
-  <body>
-    Fund Me App
-    <script src="./index.js" type="module"></script>
-    <button id="connectButton">Connect</button>
-    <button id="balanceButton">Get Balance</button>
-    <button id="withdrawButton">Withdraw</button>
+  <body style="background-color: rgb(215, 235, 179)">
+    <h4 id="ethPrice">ETH PRICE</h4>
+    <button id="connectButton" style="background-color: rgb(100, 181, 216)">
+      Connect
+    </button>
+    <span
+      id="contractAddressText"
+      style="padding-left: 5px; padding-right: 25px"
+      >Contract address</span
+    >
+    <!-- <form> -->
+    <button id="fundButton" style="background-color: rgb(100, 181, 216)">
+      Fund
+    </button>
+    <input
+      id="ethAmount"
+      placeholder="0.1"
+      style="text-align: center"
+      size="5"
+    />
+    <label id="ethFunded" style="padding-left: 5px; padding-right: 25px"
+      >ETH Amount</label
+    >
+    <!-- </form> -->
 
-    <!--form-->
-    <label for="fund">ETH Amount</label>
-    <input id="ethAmount" placeholder="0.1" />
-    <button id="fundButton">Fund</button>
-    <!--form-->
+    <button id="checkBalance" style="background-color: rgb(100, 181, 216)">
+      Check Balance
+    </button>
+    <label id="accountBal" style="padding-left: 5px; padding-right: 25px"
+      >0.0 ETH</label
+    >
+
+    <button id="withdraw" style="background-color: rgb(100, 181, 216)">
+      Withdraw
+    </button>
+    <span id="withdrawText" style="padding: left 5px"></span>
   </body>
+  <script src="./index.js" type="module"></script>
 </html>

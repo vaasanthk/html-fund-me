@@ -4,7 +4,7 @@ export const abi = [
     inputs: [
       {
         internalType: "address",
-        name: "priceFeedAddress",
+        name: "priceFeed",
         type: "address",
       },
     ],
@@ -37,7 +37,7 @@ export const abi = [
     inputs: [],
     name: "cheaperWithdraw",
     outputs: [],
-    stateMutability: "payable",
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -51,7 +51,7 @@ export const abi = [
     inputs: [
       {
         internalType: "address",
-        name: "funder",
+        name: "fundingAddress",
         type: "address",
       },
     ],
@@ -100,6 +100,19 @@ export const abi = [
   },
   {
     inputs: [],
+    name: "getPrice",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
     name: "getPriceFeed",
     outputs: [
       {
@@ -113,9 +126,22 @@ export const abi = [
   },
   {
     inputs: [],
+    name: "getVersion",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
     name: "withdraw",
     outputs: [],
-    stateMutability: "payable",
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
